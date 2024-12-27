@@ -1,7 +1,7 @@
 export default function Detail(){
     return(
         <div>
-           {console.log("Detail") }
+           <div> This is the Detail Component</div>
         </div>
     )
 }

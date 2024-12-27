@@ -1,5 +1,5 @@
 export default function Photographers(){
     return(
-        console.log("Photographers")
+        <div> This is the Photographers Page</div>
     )
 }

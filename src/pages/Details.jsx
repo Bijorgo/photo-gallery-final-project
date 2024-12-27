@@ -1,7 +1,5 @@
-export default function Detail(){
+export default function Details(){
     return(
-        <div>
-           {console.log("Detail") }
-        </div>
+        <div> This is the Details Page</div>
     )
 }
