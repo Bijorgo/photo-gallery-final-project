@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import ErrorPage from './pages/ErrorPage'
 import App from './App'
 import Photographers from './pages/Photographers'
+import Details from './pages/Details'
 
 const router = createBrowserRouter([
   {
@@ -16,14 +17,20 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        errorElement: <ErrorPage />
       },
       {
-        path: "/photographers",
-        element: <Photographers />,
-        errorElement: <ErrorPage />
+        path: "photographers",
+        element: <Photographers />
+      },
+      {
+        path: "errorpage",
+        element: <ErrorPage />
+      },
+      {
+        path: "details/:id",
+        element: <Details />
       }
-    ]
+    ],
   }
 ])
 

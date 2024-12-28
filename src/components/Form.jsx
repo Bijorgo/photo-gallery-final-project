@@ -1,7 +1,7 @@
 export default function Form(){
     return(
         <div>
-          <div> This is the Form Component</div>
+            <h3>This is the Form Component</h3>
         </div>
     )
 }
