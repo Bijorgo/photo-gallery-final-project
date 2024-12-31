@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import PhotographerCard from "../components/PhotographerCard";
 
 export default function Photographers(){
     const [ photographers, setPhotographers] = useState([]);
@@ -10,13 +11,7 @@ export default function Photographers(){
     return(
         <div>
             <h2> Meet the Photographers</h2>
-                {photographers.map( photographer => (
-                    <div key={photographer.id} >
-                    <h1>{photographer.name}</h1>
-                    <img src={photographer.url} alt={photographer.alt}/>
-                    <p>Bio: {photographer.bio}</p>
-            </div>
-            ))}
+            <PhotographerCard photographers={photographers}/>
         </div>
         
     )

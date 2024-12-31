@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react"
 import Form from "../components/Form"
-import Gallery from "../components/Gallery"
+import Photos from "../components/Photos"
 
-export default function Home(){
+export default function Gallery(){
     const [ photos, setPhotos ] = useState([])
+
+    // Initial fetxh GET request
     useEffect(() => {
         fetch("https://json-server-photo-gallery-project.onrender.com/photos")
         .then(r => r.json())
@@ -11,11 +13,15 @@ export default function Home(){
         .catch(error => console.log(error))
     },[])
 
+    const addNewPhoto = (newPhoto) => {
+        setPhotos( origPhotos => [... origPhotos, newPhoto])
+    }
+
     return(
         <div> 
             <h1>This is the Home Page</h1>
-            <Gallery photos={photos} />
-            <Form />
+            <Photos photos={photos} />
+            <Form addNewPhoto={addNewPhoto}/>
         </div>
     )
 }

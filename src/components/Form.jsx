@@ -1,32 +1,57 @@
 import { useState } from "react"
 
-export default function Form(){
+export default function Form({ addNewPhoto }){
     const [ url, setUrl] = useState("");
     const [ photographer, setPhotographer ] = useState("");
     const [ date, setDate ] = useState("");
     const [ location, setLocation ] = useState("");
     const [ alt, setAlt ] = useState("");
     const [ detail, setDetails ] = useState();
+    const [ error, setError ] = useState("")
     
     function handleSubmit(event) {
         event.preventDefault();
+
+        // check if all fields are filled
+        if (!url || !photographer || !date || !location || !alt || !detail) {
+            setError("Please fill out all fields.");
+            return; // prevents form from being submit in the event of a field not being filled out
+        }
+
+        // If all fields are filled, clear the error message
+        setError("");
+
+        // define new photo object sturcture
+        const newPhoto = {
+            url,
+            photographer,
+            date,
+            location,
+            alt,
+            detail
+        };
        
+        // Send new photo to server
         fetch("https://json-server-photo-gallery-project.onrender.com/photos", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                url: url,
-                photographer: photographer,
-                date: date,
-                location: location,
-                alt: alt,
-                detail: detail
-            })
+            body: JSON.stringify(newPhoto)
         })
         .then( r => r.json())
-        .then( console.log("use state here to update the gallery view"))
+        .then( photo => {
+            // Add form info to newPhoto object
+            addNewPhoto(photo);
+            // Clear form fields after a submit
+            setUrl("");
+            setPhotographer("");
+            setDate("");
+            setLocation("");
+            setAlt("");
+            setDetails("");
+        })
+        .catch(error => console.log(error));
     }
 
     return(
