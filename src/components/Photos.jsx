@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Photos({ photos }){
     return(
         <div className="bg-backgroundDark min-h-screen">
-            <h2 className="text-center text-4xl font-bold text-neonYellow mb-6 hover:text-neonCyan hover:animate-neonGlow transition-all">
+            <h2 className="text-center text-6xl font-bold text-neonYellow mb-6 hover:text-neonCyan hover:animate-neonGlow transition-all">
                 Welcome to the gallery
             </h2>
             <div className="flex flex-wrap gap-6 justify-center">

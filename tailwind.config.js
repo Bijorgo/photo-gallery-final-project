@@ -21,7 +21,7 @@ export default {
         neonYellow: '#FFEB3B',  // Neon yellow
       },
       fontFamily: {
-        sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'], // You can add more fonts or use your custom ones
+        sans: ['Bungee', 'Helvetica', 'Arial', 'sans-serif'], // You can add more fonts or use your custom ones
       },
       keyframes: {
         neonGlow: {
