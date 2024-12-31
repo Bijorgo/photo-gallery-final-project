@@ -7,7 +7,7 @@ export default function ErrorPage(){
     return(
         <div>
             <h1>Ruh roh, something went wrong!</h1>
-            <Link href="/"> HOME </Link>
+            <Link to="/"> HOME </Link>
         </div>
     )
 }
