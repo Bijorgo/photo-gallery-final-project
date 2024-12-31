@@ -19,7 +19,7 @@ export default function Gallery(){
 
     return(
         <div> 
-            <h1>This is the Home Page</h1>
+            <h1 className="bg-red-500 text-white">This is the Home Page</h1>
             <Photos photos={photos} />
             <Form addNewPhoto={addNewPhoto}/>
         </div>
