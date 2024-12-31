@@ -1,6 +1,12 @@
-# React + Vite
+# Photo Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+## This project was created as a final project for phase-2 of Flatironschool.
+
+
+## React + Vite
+
+This was created from a template that provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
