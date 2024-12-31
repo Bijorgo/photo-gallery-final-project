@@ -19,7 +19,6 @@ export default function Gallery(){
 
     return(
         <div> 
-            <h1 className="bg-red-500 text-white">This is the Home Page</h1>
             <div className="flex flex-wrap gap-4 justify-center">
                <Photos photos={photos} /> 
             </div>
