@@ -11,6 +11,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        backgroundDark: '#121212',
         neonPurple: '#9B59B6', // Neon purple for glowing effect
         neonPink: '#FF00FF',    // Neon pink
         neonCyan: '#00FFFF',    // Neon cyan
