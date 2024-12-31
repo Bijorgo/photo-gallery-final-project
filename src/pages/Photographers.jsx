@@ -9,8 +9,10 @@ export default function Photographers(){
         .then( photographerData => setPhotographers(photographerData))
     })
     return(
-        <div>
-            <h2> Meet the Photographers</h2>
+        <div >
+            <h2 className="text-center text-5xl font-bold text-neonYellow mb-12 hover:text-neonCyan hover:animate-neonGlow transition-all"> 
+                Meet the Photographers
+            </h2>
             <PhotographerCard photographers={photographers}/>
         </div>
         
