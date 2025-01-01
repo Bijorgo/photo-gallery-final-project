@@ -11,7 +11,7 @@ export default function DetailCard( {details} ){
                 className="w-full h-96 object-contain rounded-lg mb-6"
             />
 
-            <h4 className="text-3xl font-bold text-darkBlue">
+            <h4 className="text-3xl font-bold text-neonBlue">
                 {details.detail}
             </h4>
 
