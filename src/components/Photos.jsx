@@ -10,7 +10,7 @@ export default function Photos({ photos }){
                 {photos.map( photo => (
                 <div 
                     key={photo.id} 
-                    className="w-64 bg-#333333 border-8 border-darkBlue rounded-none overflow-hidden shadow-lg flex flex-col items-center"
+                    className="w-64 bg-#333333  rounded-none overflow-hidden shadow-neon flex flex-col items-center"
                 >
                     <img 
                         src= {photo.url} 

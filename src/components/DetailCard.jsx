@@ -1,6 +1,6 @@
 export default function DetailCard( {details} ){
     return(
-        <div className="min-h-screen bg-backgroundDark py-12 px-6">
+        <div className="min-h-screen bg-backgroundDark py-12 px-6 shadow-neon">
             <h3 className="text-neonPink">
                 Location: {details.location}
             </h3>
