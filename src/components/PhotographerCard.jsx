@@ -4,7 +4,7 @@ export default function PhotographerCard( {photographers} ){
             {photographers.map( photographer => (
                 <div 
                     key={photographer.id} 
-                    className="w-80 bg-gray-700 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all"
+                    className="w-80 bg-gray-700 text-white rounded-lg overflow-hidden shadow-neon transform hover:scale-105 transition-all"
                 >
                     <h1 className="text-2xl font-semibold text-neonBlue hover:text-neonCyan transition-all mb-4">
                         {photographer.name}

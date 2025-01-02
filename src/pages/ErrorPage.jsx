@@ -5,7 +5,7 @@ export default function ErrorPage(){
     const error = useRouteError();
     console.log(error);
     return(
-        <div className="min-h-screen text-white flex flex-col justify-center items-center py-12 px-6">
+        <div className="min-h-screen text-white flex flex-col justify-center items-center py-12 px-6 shadow-neon">
             <h1 className="text-6xl font-bold text-center text-neonPink mb-8 hover:text-neonCyan hover:animate-neonGlow transition-all">
                 Ruh roh, something went wrong!
             </h1>

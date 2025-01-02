@@ -55,7 +55,7 @@ export default function Form({ addNewPhoto }){
     }
 
     return(
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-black p-8 rounded-lg shadow-2xl space-y-6">
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-black p-8 rounded-lg shadow-neon space-y-6">
             <h3 className="text-center text-4xl font-bold text-neonPurple mb-6 hover:text-neonCyan hover:animate-neonGlow transition-all">Add A Photograph</h3>
             <div>
                 <input 
